@@ -20,6 +20,7 @@
    width: 100%;
    margin: 0 auto;
  }
+
  .titulo-principal {
    text-align: left;
    width: 100%;
@@ -48,11 +49,33 @@
    display:block ;
 }
 
-.ativo{
+.botao.ativo{
    background-color: var(--botao-ativo);
    border-bottom: 4px solid var(--verde);
 }
 
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40xp 40xp;
+}
+.aba-conteudo.ativo{
+   display:block;   
+}
+
+.aba-conteudo{
+   display: none;
+}
+
+.aba-conteudo-titulo-principal{
+   font-size: 28px;
+   text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+   text-align: center;
+   color: var(--verde);
+   text-transform: uppercase;
+}
 @media screen and (min-width: 768px) {
    .botoes { 
       display: flex;
